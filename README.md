@@ -1,4 +1,4 @@
-# Frontline Ops: browser multiplayer FPS
+# Threejs multiplayer FPS
 
 A first-person shooter for the browser, inspired by the gameplay of Call of Duty: Modern Warfare (2019).
 It is built with **three.js + TypeScript**, without any UI framework, and has a **Node.js** game server.
