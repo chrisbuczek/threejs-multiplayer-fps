@@ -49,7 +49,7 @@ export class RoomListScreen implements Screen {
         h(
           "header",
           { className: "panel-header" },
-          h("h1", { className: "logo small", text: "MP MULTIPLAYER FPS" }),
+          h("h1", { className: "logo small", text: "MP FPS" }),
           h("span", {
             className: "muted",
             text: `Playing as ${this.playerName}`,

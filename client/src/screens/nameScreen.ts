@@ -48,7 +48,7 @@ export class NameScreen implements Screen {
       h(
         "div",
         { className: "panel name-panel" },
-        h("h1", { className: "logo", text: "MP MULTIPLAYER FPS" }),
+        h("h1", { className: "logo", text: "MP FPS" }),
         h("p", { className: "muted", text: "Enter a name to deploy" }),
         form,
       ),
