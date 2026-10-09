@@ -40,7 +40,7 @@ export class RoomListScreen implements Screen {
         h(
           'header',
           { className: 'panel-header' },
-          h('h1', { className: 'logo small', text: 'MEDYCYNA PRAKTYCZNA FPS' }),
+          h('h1', { className: 'logo small', text: 'THREEJS MULTIPLAYER FPS' }),
           h('span', { className: 'muted', text: `Playing as ${this.playerName}` }),
         ),
         h(
