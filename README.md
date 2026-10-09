@@ -4,7 +4,7 @@ A first-person shooter for the browser, inspired by the gameplay of Call of Duty
 It is built with **three.js + TypeScript**, without any UI framework, and has a **Node.js** game server.
 
 - Modes: **Team Deathmatch** and **Deathmatch**
-- Maps: **MedycynaPraktycznaSunny** (default), **MedycynaPraktycznaKrakoskieCzystePowietrze** (foggy) and **MedycynaPraktycznaNight** — an office street with a playable building in three weathers — plus **Shipment** (tiny container yard)
+- Maps: **MPSunny** (default), **MPKrakoskieCzystePowietrze** (foggy) and **MPNight** — an office street with a playable building in three weathers — plus **Shipment** (tiny container yard)
 - Weapons: AK-47, M4A4, Sniper, Shotgun, Desert Eagle. **Headshots kill in one shot** (the M4A4 needs two).
 - Rooms: create (public/private, invite link, player health, allowed weapons, score/time limit), browse, join, and a lobby where the host starts the match
 - No accounts: players just type a name
@@ -19,19 +19,19 @@ server/   Node.js WebSocket game server (authoritative simulation)
 client/   Browser game (Vite + three.js, plain DOM UI)
 ```
 
-| Area | Where |
-|---|---|
-| Network messages | `shared/src/protocol.ts` |
-| Weapon stats (damage, RPM, recoil…) | `shared/src/weapons.ts` |
-| Maps (ASCII grids, easy to edit) | `shared/src/maps/dust2.ts`, `shared/src/maps/shipment.ts` |
-| Movement physics (client prediction = server) | `shared/src/movement.ts` |
-| Rooms / lobby | `server/src/room.ts`, `server/src/lobby.ts` |
-| Match simulation, scoring, respawns | `server/src/match.ts` |
-| Hit detection + lag compensation | `server/src/combat.ts`, `server/src/history.ts` |
-| Screens (name, room list, lobby) | `client/src/screens/` |
-| Game loop and wiring | `client/src/game/game.ts` |
-| Lighting & post-processing | `client/src/game/lighting.ts`, `client/src/game/renderer.ts` |
-| HUD, buy menu, scoreboard, headshot banner | `client/src/ui/` |
+| Area                                          | Where                                                        |
+| --------------------------------------------- | ------------------------------------------------------------ |
+| Network messages                              | `shared/src/protocol.ts`                                     |
+| Weapon stats (damage, RPM, recoil…)           | `shared/src/weapons.ts`                                      |
+| Maps (ASCII grids, easy to edit)              | `shared/src/maps/dust2.ts`, `shared/src/maps/shipment.ts`    |
+| Movement physics (client prediction = server) | `shared/src/movement.ts`                                     |
+| Rooms / lobby                                 | `server/src/room.ts`, `server/src/lobby.ts`                  |
+| Match simulation, scoring, respawns           | `server/src/match.ts`                                        |
+| Hit detection + lag compensation              | `server/src/combat.ts`, `server/src/history.ts`              |
+| Screens (name, room list, lobby)              | `client/src/screens/`                                        |
+| Game loop and wiring                          | `client/src/game/game.ts`                                    |
+| Lighting & post-processing                    | `client/src/game/lighting.ts`, `client/src/game/renderer.ts` |
+| HUD, buy menu, scoreboard, headshot banner    | `client/src/ui/`                                             |
 
 ## How it works (short)
 
